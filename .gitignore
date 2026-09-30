@@ -1,0 +1,23 @@
+cat > .gitignore << 'EOF'
+# Secrets
+.env
+*.env
+!.env.example
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+
+# Modèles et données lourdes
+Backend/models/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+EOF
